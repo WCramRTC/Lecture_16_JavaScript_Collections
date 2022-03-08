@@ -15,17 +15,17 @@ let getAllByClass = document.getElementsByClassName("profession");
 let getAllParas = document.getElementsByTagName("p");
 
 // getElementsByName
+const map1 = new Map();
 
-// style
+map1.set("Cheese", 3);
 
 
-// array
-
+// Key Value Pairs
 
 btnAdd.addEventListener('click', e => {
     let input = userInput.value;
-    for(let i = 0; i < colors.length; i++) {
-        getAllByClass[i].style.color = colors[i];
+    for(let i = 0; i < getAllParas.length; i++) {
+        getAllParas[i].style.color = colors[i % colors.length];
     }
 })
 
