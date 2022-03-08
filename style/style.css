@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: red;
+#container {
+    min-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#display {
+    min-height: 200px;
+}
+
+.collection-example {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
 }
