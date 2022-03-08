@@ -22,3 +22,15 @@
     margin-top: 20px;
     padding: 20px;
 }
+
+nav {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr;
+    
+}
+
+nav a {
+    border: 1px solid black;
+    text-align: center;
+}

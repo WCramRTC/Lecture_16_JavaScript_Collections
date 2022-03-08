@@ -4,12 +4,29 @@ const btnAdd = document.getElementById("btn-add");
 const btnNew = document.getElementById('btn-new');
 const btnClear = document.getElementById('btn-clear');
 
+let colors = ["red", "blue", "yellow", "orange", "purple"];
 
+// getElementById
+// getElementsByClass
+let getAllByClass = document.getElementsByClassName("profession");
+
+
+// getElementsByTagName
+let getAllParas = document.getElementsByTagName("p");
+
+// getElementsByName
+
+// style
+
+
+// array
 
 
 btnAdd.addEventListener('click', e => {
     let input = userInput.value;
-    DisplayAppend(input)
+    for(let i = 0; i < colors.length; i++) {
+        getAllByClass[i].style.color = colors[i];
+    }
 })
 
 btnNew.addEventListener('click', e => {
